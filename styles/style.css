@@ -189,11 +189,6 @@
   min-inline-size: 130px;
 }
 
-.button__footer {
-  margin-top: 50px;
-  margin-bottom: 103px;
-}
-
 .button__save {
   position: relative;
   display: flex;
@@ -201,6 +196,8 @@
   align-items: center;
   gap: 8px;
   margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 103px;
   border: 2px solid var(--contour-color);
   padding: 15px 21px 15px 19px;
   font-family: var(--only-font-family);
