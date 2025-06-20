@@ -7,7 +7,7 @@
   --animation-fill-color: #FF0000;
   --bg-repeating-color: #d3d3d3;
   --bg-linear-gradient-0-color: #e7e7e7;
-  --bg-linear-gradient-100-color: #1a1a1a; 
+  --bg-linear-gradient-100-color: #1a1a1a;
   --standart-color: #fff;
   --bg-backdrop-color: rgb(0 0 0 / 0.75);
 
@@ -21,7 +21,7 @@
   --st-font-size: 14px;
 
   /***********ST**************/
-  
+
   --st-text-transform: uppercase;
   --st-bg-color: transparent;
 }
