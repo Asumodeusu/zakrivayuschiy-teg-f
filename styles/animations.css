@@ -22,7 +22,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-.card__icon-button:focus{
+.card__icon-button:focus {
   outline: none;
 }
 
@@ -132,7 +132,7 @@
   }
 }
 
-/********ANIMATED-IS-LIKED********/
+/********IS-LIKED********/
 
 .like-icon.is-liked .heart {
   transform-origin: center;
