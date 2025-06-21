@@ -12,6 +12,7 @@
     <!--favicon-->
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./images/apple-favicon.png" />
   </head>
   <body class="page">
     <header class="header">
@@ -25,7 +26,12 @@
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
         <figure class="card__image">
-          <img class="image" src="./images/moon.png" alt="Луна" />
+          <img
+            class="image"
+            src="./images/moon.png"
+            alt="Луна"
+            loading="lazy"
+          />
           <figcaption class="image__label">&lt;/HTML&gt;</figcaption>
         </figure>
         <div class="card__sub">
@@ -72,7 +78,7 @@
               />
             </svg>
           </button>
-          <button type="button" class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -81,7 +87,12 @@
       <article class="card">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <figure class="card__image">
-          <img class="image fuzzy__image" src="./images/moon.png" alt="Луна" />
+          <img
+            class="image fuzzy__image"
+            src="./images/moon.png"
+            alt="Луна"
+            loading="lazy"
+          />
           <figcaption class="image__label">&lt;/HTML&gt;</figcaption>
         </figure>
         <div class="card__sub">
@@ -130,7 +141,7 @@
               />
             </svg>
           </button>
-          <button type="button" class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -139,7 +150,12 @@
       <article class="card">
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <figure class="card__image">
-          <img class="image sepia__image" src="./images/moon.png" alt="Луна" />
+          <img
+            class="image sepia__image"
+            src="./images/moon.png"
+            alt="Луна"
+            loading="lazy"
+          />
           <figcaption class="image__label">&lt;CSS&gt;</figcaption>
         </figure>
         <div class="card__sub">
@@ -186,7 +202,7 @@
               />
             </svg>
           </button>
-          <button type="button" class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -199,6 +215,7 @@
             class="image brightened__image"
             src="./images/moon.png"
             alt="Луна"
+            loading="lazy"
           />
           <figcaption class="image__label">&lt;desigions&gt;</figcaption>
         </figure>
@@ -248,7 +265,7 @@
               />
             </svg>
           </button>
-          <button type="button" class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -257,7 +274,12 @@
       <article class="card">
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <figure class="card__image">
-          <img class="image neon__image" src="./images/moon.png" alt="Луна" />
+          <img
+            class="image neon__image"
+            src="./images/moon.png"
+            alt="Луна"
+            loading="lazy"
+          />
           <figcaption class="image__label">care</figcaption>
         </figure>
         <div class="card__sub">
@@ -307,7 +329,7 @@
               />
             </svg>
           </button>
-          <button type="button" class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -320,6 +342,7 @@
             class="image vintage__image"
             src="./images/moon.png"
             alt="Луна"
+            loading="lazy"
           />
           <figcaption class="image__label">&lt;support&gt;</figcaption>
         </figure>
@@ -367,7 +390,7 @@
               />
             </svg>
           </button>
-          <button type="button" class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -380,6 +403,7 @@
             class="image intensive__image"
             src="./images/moon.png"
             alt="Луна"
+            loading="lazy"
           />
           <figcaption class="image__label">
             &lt;lifes-style: none;&gt;
@@ -431,7 +455,7 @@
               />
             </svg>
           </button>
-          <button type="button" class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -440,7 +464,12 @@
       <article class="card">
         <h2 class="card__title">«Сейчас я здесь»</h2>
         <figure class="card__image">
-          <img class="image bw-image" src="./images/moon.png" alt="Луна" />
+          <img
+            class="image bw-image"
+            src="./images/moon.png"
+            alt="Луна"
+            loading="lazy"
+          />
           <figcaption class="image__label">&lt;experience&gt;</figcaption>
         </figure>
         <div class="card__sub">
@@ -491,14 +520,14 @@
               />
             </svg>
           </button>
-          <button type="button" class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
       <button
         type="button"
-        class="button__save"
+        class="button button__save"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
@@ -512,28 +541,25 @@
         <span class="button__text-save">Сохранить на память</span>
       </button>
     </main>
-      <dialog class="dialog" id="dialog-id">
-        <div class="dialog__floppy">
-          <svg
-            class="big__floppy"
-            viewbox="0 0 40 40"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="./svg/floppy.svg#floppy" />
-          </svg>
-          <span class="floppy__text">Вставьте дискету, чтобы продолжить</span>
-        </div>
-        <div class="btn-dialog">
-        <button
-          type="button"
-          class="btn-dialog-close"
-          onclick="window['dialog-id'].close()"
+    <dialog 
+        class="dialog" 
+        id="dialog-id">
+      <div class="dialog__floppy">
+        <svg
+          class="big__floppy"
+          viewbox="0 0 40 40"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span class="button__text-save">ок</span>
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <p class="floppy__text">Вставьте дискету, чтобы продолжить</p>
+      </div>
+     <form method="dialog">
+        <button class="button btn-dialog-close" type="submit">
+        <span class="button__text">Oк</span>
         </button>
-        </div>
-      </dialog>
-
+     </form>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
