@@ -12,6 +12,16 @@
 
 /************HOVER-HEART***********/
 
+.like-icon .core {
+  fill: transparent;
+  transition: fill 0.3s 0.03 linear;
+}
+
+.like-icon .main-body {
+  fill: transparent;
+  transition: fill 0.3s 0.05s linear;
+}
+
 .like-icon:hover .core {
   fill: var(--contour-color);
   transition: fill 0.3s linear;

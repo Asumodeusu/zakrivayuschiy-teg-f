@@ -45,7 +45,7 @@
   border: 2px solid var(--contour-color);
   padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem) 0
     clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem);
-  font-family: var(--only-font-family);
+  font-family: var(--only-font-family), sans-serif;
   font-weight: var(--st-font-weight);
   text-transform: var(--st-text-transform);
   background-color: var(--standart-color);
@@ -79,7 +79,7 @@
   border-bottom: 2px solid var(--contour-color);
   padding: 5px 24px 5px 10px;
   vertical-align: middle;
-  font-family: var(--title-font-family);
+  font-family: var(--title-font-family), sans-serif;
   font-weight: var(--title-font-weight);
   font-size: var(--title-font-size);
   font-variation-settings: "wght" var(--title-font-weight);
@@ -132,7 +132,7 @@
   right: 25px;
   opacity: 50%;
   color: var(--contour-color);
-  font-family: var(--only-font-family);
+  font-family: var(--only-font-family), sans-serif;
   font-weight: var(--st-font-weight);
   font-size: var(--st-font-size);
   text-shadow: -1px -1px 0 var(--standart-color),
@@ -149,7 +149,7 @@
 
 .sub__text {
   padding-bottom: 27px;
-  font-family: var(--title-font-family);
+  font-family: var(--title-font-family), sans-serif;
   font-weight: var(--st-font-weight);
   font-size: var(--title-font-size);
   line-height: 21px;
@@ -190,47 +190,12 @@
   cursor: pointer;
 }
 
-.card__like-button {
-  position: relative;
-  border: 2px solid var(--contour-color);
-  font-family: var(--only-font-family);
-  font-weight: var(--st-font-weight);
-  font-size: var(--st-font-size);
-  line-height: 90%;
-  background-color: var(--st-bg-color);
-  cursor: pointer;
-  font-variation-settings: "wght" var(--st-font-weight);
-  block-size: 38px;
-  min-inline-size: 130px;
-  color: var(--standart-color);
-}
-
-.button__save {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin: 0 auto;
-  margin-bottom: 103px;
-  border: 2px solid var(--contour-color);
-  padding: 15px 21px 15px 19px;
-  font-family: var(--only-font-family);
-  font-weight: var(--st-font-weight);
-  font-size: var(--st-font-size);
-  line-height: 90%;
-  background-color: var(--standart-color);
-  cursor: pointer;
-  font-variation-settings: "wght" var(--st-font-weight);
-  max-inline-size: 340px;
-  color: var(--standart-color);
-}
-
 .button__text-save,
 .button__text {
-  z-index: 3;
+  z-index: 2;
   position: relative;
   mix-blend-mode: difference;
+  transition: color 0.5s ease-in-out;
 }
 
 .floppy {
@@ -240,6 +205,7 @@
   mix-blend-mode: difference;
   color: var(--standart-color);
   z-index: 2;
+  transition: color 0.5s ease-in-out;
 }
 
 .button:focus-visible,
@@ -280,14 +246,6 @@
   transform: scaleX(1);
 }
 
-.button:hover .button__text-save,
-.button:hover .button__text,
-.button:hover .floppy {
-  position: relative;
-  z-index: 2;
-  transition: color 0.5s ease-in-out;
-}
-
 .dialog {
   flex-direction: column;
   align-items: center;
@@ -319,7 +277,7 @@
 }
 
 .floppy__text {
-  font-family: var(--only-font-family);
+  font-family: var(--only-font-family), sans-serif;
   font-weight: var(--st-font-weight);
   font-size: var(--st-font-size);
   line-height: 150%;
@@ -327,21 +285,41 @@
   font-variation-settings: "wght" var(--st-font-weight);
 }
 
-.btn-dialog-close {
+.button {
   position: relative;
-  padding: 10px 17px;
   border: 2px solid var(--contour-color);
-  font-family: var(--only-font-family);
+  font-family: var(--only-font-family), sans-serif;
   font-weight: var(--st-font-weight);
   font-size: var(--st-font-size);
   line-height: 90%;
-  text-transform: var(--st-text-transform);
   background-color: var(--st-bg-color);
   cursor: pointer;
   font-variation-settings: "wght" var(--st-font-weight);
+  color: var(--standart-color);
+}
+
+.button__save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+  margin-bottom: 103px;
+  padding: 15px 21px 15px 19px;
+  background-color: var(--standart-color);
+  max-inline-size: 340px;
+}
+
+.card__like-button {
+  block-size: 38px;
+  min-inline-size: 130px;
+}
+
+.btn-dialog-close {
+  padding: 10px 17px;
   inline-size: 293px;
   overflow: hidden;
-  color: var(--standart-color);
+  text-transform: var(--st-text-transform);
 }
 
 .sparks {
